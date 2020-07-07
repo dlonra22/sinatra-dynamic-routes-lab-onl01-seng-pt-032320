@@ -58,6 +58,5 @@ class App < Sinatra::Base
     else
       "Error: invalid operation > #{@operation}"
     end
-    
-
+  end
 end
