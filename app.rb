@@ -56,7 +56,7 @@ class App < Sinatra::Base
           @result = 0 
         end
     else
-      "Error: invalid operation > #{@operation}"
+      @result ="Error: invalid operation > #{@operation}"
     end
     @result.to_s
   end
