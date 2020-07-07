@@ -46,13 +46,13 @@ class App < Sinatra::Base
     when "add"
         @result = @number1 + @number2
     when "subtract"
-          
-    when 21..70
-        "You should be ok for now."
-    when 71..100
-        "The tank is almost full."
+        @result = @number1 - @number2
+    when "multiply"
+        @result = @number1 + @number2
+    when "divide"
+        
     else
-      "Error: capacity has an invalid value (#{capacity})"
+      "Error: invalid operation #{@operation}"
     end
     
 
