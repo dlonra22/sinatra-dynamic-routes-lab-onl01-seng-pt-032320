@@ -31,7 +31,7 @@ class App < Sinatra::Base
     @word5 = params[:word5]
     @longword = ""
     5.times do |i|
-      @longword = @longword + @word#{i}
+      @longword = @longword + @word(i)
     end
     @longword
   end
