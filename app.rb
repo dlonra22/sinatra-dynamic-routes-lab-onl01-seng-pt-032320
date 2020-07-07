@@ -38,7 +38,22 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do 
-    @operation
+    @operation = params[:operation]
+    @number1 = params[:number1].to_i
+    @number2 = params[:number2].to_i
+    @result = nil
+    case @operation
+    when "add"
+        @result = @number1 + @number2
+    when "subtract"
+          
+    when 21..70
+        "You should be ok for now."
+    when 71..100
+        "The tank is almost full."
+    else
+      "Error: capacity has an invalid value (#{capacity})"
+    end
     
 
 end
