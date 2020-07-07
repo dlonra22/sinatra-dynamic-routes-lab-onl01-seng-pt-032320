@@ -33,6 +33,8 @@ class App < Sinatra::Base
     5.times do |i|
       @longword = @longword + @word#{i}
     end
+    @longword
+  end
     
 
 end
