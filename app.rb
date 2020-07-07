@@ -29,7 +29,7 @@ class App < Sinatra::Base
     @word << params[:word2] + " "
     @word << params[:word3] + " "
     @word << params[:word4] + " "
-    @word << params[:word5]
+    @word << params[:word5] + "."
     @longword = ""
     @word.each do |w|
       @longword = @longword + w
