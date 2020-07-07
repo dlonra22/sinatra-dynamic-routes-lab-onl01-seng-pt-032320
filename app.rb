@@ -50,7 +50,7 @@ class App < Sinatra::Base
     when "multiply"
         @result = @number1 * @number2
     when "divide"
-        if (number1 && number2)!= 0
+        if (@number1!=0 && @number2!= 0)
           @result = @number1 / @number2
         else 
           @result = 0 
