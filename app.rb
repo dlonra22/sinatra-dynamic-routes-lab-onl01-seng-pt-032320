@@ -48,11 +48,15 @@ class App < Sinatra::Base
     when "subtract"
         @result = @number1 - @number2
     when "multiply"
-        @result = @number1 + @number2
+        @result = @number1 * @number2
     when "divide"
-        
+        if (number1 && number2)!= 0
+          @result = @number1 / @number2
+        else 
+          @result = 0 
+        end
     else
-      "Error: invalid operation #{@operation}"
+      "Error: invalid operation > #{@operation}"
     end
     
 
